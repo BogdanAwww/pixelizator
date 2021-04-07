@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelizator</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left side">
+            <canvas class="canvas" width="0" height="0"></canvas>
+            <div class="helper">Download image</div>
+            
+        </div>
+        <div class="right side">
+            
+            <div class="drop-area">
+                <div class="form-group">
+                  <label class="label">
+                    <i class="material-icons">attach_file</i>
+                    <span class="title">Add file (jpeg, png)</span>
+                    <input type="file" accept="image/*" onchange="handleFiles(this.files[0])">
+                  </label>
+                </div>
+            </div>
+            <div class="range-wrapper">
+                <label for="range" class = 'range-label'>Pixelization lvl</label>
+                <input class = "range pix" type="range" name="range-rover" id="range" min = "2" max = "150"  value = '1'>
+            </div>
+            <button class="play" disabled>Play</button>
+        </div>
+    </div>
+    
+    <script src="js/drag-n-drop.js"></script>
+    <script src="js/pixelization.js"></script>
+</body>
+</html>

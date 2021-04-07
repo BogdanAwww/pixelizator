@@ -1,0 +1,112 @@
+body{
+    background-color: burlywood;
+}
+.container{
+    
+   
+    display: flex;
+   
+}
+.side{
+    
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.right{
+    
+   border-left: 1px solid purple;
+
+}
+.range-wrapper{
+    width: 250px;
+}
+.range{
+    width: 100%;
+}
+.range-label{
+    color: white;
+    display: block;
+    margin-bottom: 20px;
+}
+.play{
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+.left{
+    height: 100vh;
+    flex-grow: 1;
+    background-color: white;
+    overflow: hidden;
+}
+.helper{
+    margin-top: 50px;
+}
+.img-wrapper img{
+    max-width: 800px;
+    max-height: 550px;
+}
+.canvas{
+    z-index: 10;
+    background-color: pink;
+    max-height: 100vh;
+}
+
+
+.drop-area .form-group {
+	padding: 1em;
+	margin: 1em;
+    
+}
+
+.drop-area input[type=file] {
+	outline: 0;
+	opacity: 0;
+	pointer-events: none;
+	
+}
+
+.drop-area .label {
+	height: 200px;
+    width: 200px;
+	border: 2px dashed grey;
+	border-radius: 5px;
+	padding: 1.2em;
+	transition: border 300ms ease;
+	cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.drop-area .label i {
+	display: block;
+	font-size: 42px;
+	padding-bottom: 16px
+}
+
+.drop-area .label i,
+.drop-area .label .title {
+	color: grey;
+	transition: 200ms color
+}
+
+.drop-area .label:hover {
+	border: 2px solid #000;
+}
+
+.drop-area .label:hover i,
+.drop-area .label:hover .title {
+	color: #000;
+}
+
+.highlight{
+    background-color: whitesmoke;
+}
